@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ASN1.AST.fs" />
+    <Compile Include="Parser.Util.fs" />
+    <Compile Include="ASN1.Parser.fs" />
+    <Compile Include="ASN1.Compiler.fs" />
+    <Compile Include="Decoder.BER.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿-- Comment is okey
+
+TAP-0311  DEFINITIONS IMPLICIT TAGS  ::= 
+
+BEGIN 
+
+	DataInterChange ::= CHOICE 
+	{
+		transferBatch TransferBatch, 
+		notification  Notification
+	}
+
+	PercentageRate ::= INTEGER 
+
+	BatchControlInfo ::= [APPLICATION 4] SEQUENCE
+	{
+		recipient                Recipient                   OPTIONAL,  -- EOL comment
+	}
+
+	PlmnId ::= [APPLICATION 169] AsciiString 
+
+	Recipient ::= [APPLICATION 182]  PlmnId
+
+
+
+END
